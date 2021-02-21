@@ -89,6 +89,7 @@ if (isGetCookie = typeof $request !== 'undefined') {
     $.msg($.name, '【提示】请先获取中青看点一cookie',"",{'open-url': "https://kandian.youth.cn/u/mhkjN"})
     return;
   }
+  while(2>1){
   for (let i = 0; i < cookieArr.length; i++) {
     if (cookieArr[i]) {
       cookie = cookieArr[i];
@@ -139,7 +140,8 @@ $.log(`转盘双倍: +${doublerotary}青豆 剩余${rotaryres.data.doubleNum}次
 })()
   .catch((e) => $.logErr(e))
   .finally(() => $.done())
- 
+   await wait(420000)
+}
 function kdHost(api,body) {
   return {
     url: 'https://kd.youth.cn/'+api+`&${myuid}`,
