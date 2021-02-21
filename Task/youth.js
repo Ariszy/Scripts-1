@@ -137,7 +137,7 @@ $.log(`转盘双倍: +${doublerotary}青豆 剩余${rotaryres.data.doubleNum}次
        await notify.sendNotify($.name + " " + nick, "您的余额约为"+cash+"元，已可以提现"+'\n'+`【收益总计】${signinfo.data.user.score}青豆  现金约${cash}元\n${detail}`)
     }
  }
- console.log(`========================================一次结束，7分钟后开始============================================`）
+ console.log(`========================本次任务执行完毕，休息7分钟==============================\n`);
              await $.wait(420000)
   }
 })()
