@@ -61,8 +61,9 @@ if (isGetCookie) {
       $.msg($.name, '【提示】🉐登录腾讯新闻app获取cookie',"qqnews://article_9500?tab=news_news&from=self", {"open-url": "qqnews://article_9500?tab=news_news&from=self"});
       return
     }
+
+while(2>1){
   if ($.isNode()){
-      while(2>1){
      timeZone = new Date().getTimezoneOffset() / 60;
      timestamp = Date.now()+ (8+timeZone) * 60 * 60 * 1000;
      bjTime = new Date(timestamp).toLocaleString('zh',{hour12:false,timeZoneName: 'long'});
