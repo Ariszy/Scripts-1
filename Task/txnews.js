@@ -62,6 +62,7 @@ if (isGetCookie) {
       return
     }
   if ($.isNode()){
+      while(2>1){
      timeZone = new Date().getTimezoneOffset() / 60;
      timestamp = Date.now()+ (8+timeZone) * 60 * 60 * 1000;
      bjTime = new Date(timestamp).toLocaleString('zh',{hour12:false,timeZoneName: 'long'});
@@ -89,6 +90,9 @@ if (isGetCookie) {
        }
       }
     }
+      console.log(`========================本次任务执行完毕，休息10分钟==============================\n`);
+      await $.wait(600000)
+  }
   })()
       .catch((e) => $.logErr(e))
       .finally(() => $.done())
