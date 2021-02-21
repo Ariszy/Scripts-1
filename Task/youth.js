@@ -20,7 +20,7 @@ let ARTBODYs = $.getdata('read_zq');
 let READTIME = $.getdata('readtime_zq');
 let cardTime = $.getdata('zqtime')||"05";//打卡时间
 let rotaryscore=0,doublerotary=0; 
-let nick;
+let nick,cash;
 
 let cookieArr = [], cookie = '',
     readArr = [], articlebodyVal ='',
