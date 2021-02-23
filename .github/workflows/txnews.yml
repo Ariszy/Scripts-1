@@ -9,7 +9,7 @@ name: 腾讯新闻
 on:
   workflow_dispatch:
   schedule:
-     - cron: '* * * */10000 *'
+     - cron: '* */6 * * *'
   watch:
      types: started
     
