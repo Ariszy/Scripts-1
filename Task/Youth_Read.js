@@ -64,6 +64,7 @@ let indexLast = $.getdata('zqbody_index');
   for ( var i = indexLast ? indexLast:0; i < ReadArr.length; i++) {
     if (ReadArr[i]) {
       articlebody = ReadArr[i];
+       $.log(articlebody)
        $.index =  $.index + 1;
        $.log(`-------------------------\n\n开始中青看点第${$.index}次阅读`);
        await $.wait(10000);
