@@ -2,7 +2,7 @@
 const zhiyi = '重放N次'
 const $ = Env(zhiyi)
 let i = 0;
-var num = 10;//重放次数控制,修改num的值就可修改执行次数
+var num = 10000;//重放次数控制,修改num的值就可修改执行次数
 let logs = 0;
 let isGetCookie = typeof $request !== 'undefined'
 if (isGetCookie) {
